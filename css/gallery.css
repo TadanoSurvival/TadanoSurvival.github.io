@@ -1,18 +1,18 @@
 /* Selection/Highlhgt Colour */
 	::-moz-selection { 
 		color: white;
-		background: #ff007f;
+		background: #b1b1b1;
 	}
 
 	::selection {
 		color: white;
-		background: #ff007f;
+		background: #b1b1b1;
 	}
 
 /* Scrollbar Colour */
 	/* Firefox */
 		* {
-			scrollbar-color: #ff007f transparent;
+			scrollbar-color: #b1b1b1 transparent;
 		}
 
 	/* Chrome, Edge, and Safari */
@@ -25,26 +25,26 @@
 		}
 
 		*::-webkit-scrollbar-thumb {
-			background-color: #ff007f;
+			background-color: #b1b1b1;
 			border-radius: 20px;
 		}
 
 /* Information Button */
 	.btn-info {
 	    color: #000;
-	    background-color: #ff007f;
-	    border-color: #ff007f;
+	    background-color: #b1b1b1;
+	    border-color: #b1b1b1;
 	}
 
 	.btn-info:hover {
 	    color: #000;
 	    background-color: #ffffff;
-	    border-color: #ff007f;
+	    border-color: #b1b1b1;
 	}
 
 /* Links and Link Buttons */
 	a {
-		color: #ff007f;
+		color: #b1b1b1;
 	}
 
 	a:hover {
