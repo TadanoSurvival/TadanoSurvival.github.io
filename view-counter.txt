@@ -1,0 +1,3 @@
+https://api.countapi.xyz/create?namespace=TadanoSurvival&value=0
+https://api.countapi.xyz/get/TadanoSurvival
+https://api.countapi.xyz/update/TadanoSurvival?amount=1

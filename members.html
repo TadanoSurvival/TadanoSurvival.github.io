@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ただのサバイバルサーバー</title>
+
+    <!-- Favicon Import -->
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="shortcut icon" id="favicon" href="img/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicon.svg">
+    <link rel="icon" href="img/favicon.svg">
+
+    <!-- CSS Import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Share/Embed Content -->
+    <meta property="og:url" content="http://teamskydle.idleendeavor.com"/>
+    <meta property="og:type" content="運営陣紹介"/>
+    <meta property="og:title" content="ただのサバイバルサーバー"/>
+    <meta name="author" cotent="Built by AI Avalon&Satoyan">
+    <meta property="og:description" content="ただのサバイバルサーバー公式webページ"/>
+    <meta property="og:image" content="img/favicon.svg"/>
+    <meta name="msapplication-TileColor" content="#ff007f">
+    <meta name="theme-color" content="#b9ff5d">
+    <meta property="og:type" content="Website"/>
+    <meta name="twitter:title" content="ただのサバイバルサーバー">  
+    <meta name="twitter:description" content="ただのサバイバルサーバー公式webページ">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="bg-dark">
+    <!-- Pre-loader -->
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>   
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand" href="#"><img src="img/logo.svg" alt="" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="bi bi-list"></i></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">ようこそ！</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="announcements.html" class="nav-link">最新情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="members.html" class="nav-link active">運営陣紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rule.html" class="nav-link">ルール</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">サーバー内風景</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="guides.html" class="nav-link">参加方法</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">その他</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://discord.gg/hzkuHhUebz" class="btn btn-info" role="button">Discordに参加</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link visits">0</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Screen -->
+    <section class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <h1 class="m-0 display-3">ただのサバイバルサーバー</h1>
+            <h1 class="display-1" style="color: #ff007f;">運営陣紹介</h1>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light">
+        <div class="container">
+            <label for="searchbox"></label>
+            <input class="form-control mb-3" placeholder="Search our database for Admins and Members" type="search" oninput="liveSearch()" id="searchbox">
+
+            <span class="is-hidden">secret</span>
+
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/AI_AVALON.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">AI Avalon <span class="text-dark badge bg-primary">Server Owner</span><span class="badge bg-danger">Server Engineer</span></h3>
+                            <p class="card-text">このページは私の偏見で作成されています。あしからず。</p>
+                            <p class="card-text">私も最初はOPでしたが気が付いたらOwnerになっていました（笑）</p>
+                            <p class="card-text">仲よくしてもらえると嬉しいです。</p>
+                            <p class="card-text">気軽に話しかけてもらえると嬉しいです。</p>
+                            <p class="card-text">DiscordID : AI Avalon#7850</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/ritorick1970.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">Ritorick1970 <span class="badge bg-warning">Admin</span> <span class="badge bg-danger">Server Engineer</span></h3>
+                            <p class="card-text">最強の技術者</p>
+                            <p class="card-text">ただ鯖の技術班であり、主にAvalonにだけ暴言を吐く男</p>
+                            <p class="card-text">昔からAvalonと知り合いだったらしい…</p>
+                            <p class="card-text">DiscordID : りとくん_IDC_ND#2077</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/satoyan08s.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">satoyan08s<span class="badge bg-success">Chief Admin</span><span class="badge bg-danger">Server Engineer</span></h3>
+                            <p class="card-text">多分ただ鯖1働いている人間</p>
+                            <p class="card-text">DiscordのBotからWebまで何でもかんでもやっている努力家</p>
+                            <p class="card-text">Apexやってるときだけ気性が荒くなるかも…？</p>
+                            <p class="card-text">DiscordID : satoyan#2384</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/tukine15.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">tukine15<span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">ただ鯖の安心と安全を守る女神</p>
+                            <p class="card-text">ありとあらゆることで監視をし、勘でチーターやX-Rayを使用するものを見抜いてきた。</p>
+                            <p class="card-text">なかなかに面白い人である。</p>
+                            <p class="card-text">実は元ホワリスの女神…</p>
+                            <p class="card-text">一番ただ鯖の管理者内で権力を持っているのはこの人かもしれない…</p>
+                            <p class="card-text">DiscordID : つっきーネ#4304</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/rura.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">Rurakun <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">イベントを主に担当している運営陣</p>
+                            <p class="card-text">さぼり気味なことはあるが一応頼んだことはしっかりやってくれる心優しい子</p>
+                            <p class="card-text">無茶振りをしてもイベントがなんとか完成する確率は五分五分くらい…？</p>
+                            <p class="card-text">DiscordID : Ru_RA_#2357</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/tahashi.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">Takassiii165 <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">kill @e した猛者</p>
+                            <p class="card-text">Functionコマンドを分からずに実行したらサーバー内が大変なことになったこともこの人のせいかも？</p>
+                            <p class="card-text">気前が良く、楽しんでサーバー内で遊んでいるらしい…</p>
+                            <p class="card-text">DiscordID : タカッシー#1125</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/senmumocchi.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">SenmuMocchi<span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">Season1からいる数少ないOPの一人。</p>
+                            <p class="card-text">たまーに技術班ともめているかも…？</p>
+                            <p class="card-text">でも、コマンドも組めるしイベントもできるし臨機応変に対応できるところは凄いと思う</p>
+                            <p class="card-text">大分最初にイベントを丸投げした記憶がある…</p>
+                            <p class="card-text">DiscordID : 専務もっち#1959</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">NewYuto <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">初代ただ鯖鯖主</p>
+                            <p class="card-text">なかなかに豪快な人だった。</p>
+                            <p class="card-text">途中でDDOSやらなんやらで鯖主を交代した。</p>
+                            <p class="card-text">ドラムなどをやっているらしい…</p>
+                            <p class="card-text">DiscordID : NewYuto#1069</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">Kasogami <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">一言で言えばコマンド神</p>
+                            <p class="card-text">超有能な小言メン</p>
+                            <p class="card-text">コマンド力に関しては彼の右に出るものはいない…きがする…</p>
+                            <p class="card-text">1期勢で初代OPの生き残りの一人。</p>
+                            <p class="card-text">DiscordID : かそがみん#1573</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">ToastValym <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">DiscordID : トースター#1379</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">BinaryPine <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">DiscordID : binary#5570</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">mini0psycho <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">DiscordID : Matcha#0609</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">MISATO45MST <span class="badge bg-info">Supporter</span></h3>
+                            <p class="card-text">DiscordID : MISATO#8670</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/zero.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">zeropprp <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">現在のWhitelistの神</p>
+                            <p class="card-text">Whitelist追加の殆どを現在はこのお方がやっている。</p>
+                            <p class="card-text">マジでWhitelistの追加に関して頭がこの人にあがらない…</p>
+                            <p class="card-text">Apexとかポケモンとかもやっているらしい…</p>
+                            <p class="card-text">DiscordID : ぜろ#9784</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">yuuutsu012 <span class="badge bg-info">Supporter</span></h3>
+                            <p class="card-text">DiscordID : ゆーうつ#8012</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card cards mb-3 bg-dark">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-md-1">
+                            <img class="img-fluid" src="img/members/no-image.png">
+                        </div>
+                        <div class="col m-4">
+                            <h3 class="card-title">HAPI39 <span class="badge bg-warning">Admin</span></h3>
+                            <p class="card-text">唯一のAvalonのリア友枠</p>
+                            <p class="card-text">困ったときに相談できる温和な性格</p>
+                            <p class="card-text">困ったときにはこの人に相談するとなかなかいい答えが返ってくるかもしれない…</p>
+                            <p class="card-text">DiscordID : サビドラ#7672</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <strong>注釈</strong>すべての運営陣が紹介されているわけではありません。活動的な人が紹介されています。もし、何かご質問があればAI Avalonまでご質問いただきますようよろしくおねがいします。
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-dark text-light p-4">
+        <div class="container">
+            <p class="lead text-center"><a href="about.html">その他</a>に行ってみる</p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+		function updateCounter() {
+		    fetch('https://api.countapi.xyz/get/TadanoSurvival')
+		        .then(res => res.json())
+		        .then(data => counterElement.innerHTML = data.value)
+		}
+
+		updateCounter()
+
+		counterElement = document.getElementsByClassName('visits')[0];
+	</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("IPアドレスをコピーしました！");
+      }
+    </script>
+    <script>
+        function liveSearch() {
+          // Locate the card elements
+          let cards = document.querySelectorAll('.cards')
+          // Locate the search input
+          let search_query = document.getElementById("searchbox").value;
+          // Loop through the cards
+          for (var i = 0; i < cards.length; i++) {
+            // If the text is within the card...
+            if(cards[i].innerText.toLowerCase()
+              // ...and the text matches the search query...
+              .includes(search_query.toLowerCase())) {
+                // ...remove the `.is-hidden` class.
+                cards[i].classList.remove("is-hidden");
+            } else {
+              // Otherwise, add the class.
+              cards[i].classList.add("is-hidden");
+            }
+          }
+        }
+    </script>
+</body>
+</html>
