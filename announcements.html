@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>ただのサバイバルサーバー</title>
+		<title>ただのサバイバルサーバー</title>
 
-	<!-- Favicon Import -->
-	<link rel="icon" href="img/favicon.svg">
-	<link rel="shortcut icon" id="favicon" href="img/favicon.svg">
-	<link rel="icon" type="image/png" href="img/favicon.svg">
-	<link rel="icon" href="img/favicon.svg">
+		<!-- Favicon Import -->
+		<link rel="icon" href="img/favicon.svg" />
+		<link rel="shortcut icon" id="favicon" href="img/favicon.svg" />
+		<link rel="icon" type="image/png" href="img/favicon.svg" />
+		<link rel="icon" href="img/favicon.svg" />
 
-	<!-- CSS Import -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+		<!-- CSS Import -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<!-- Share/Embed Content -->
-	<meta property="og:url" content="https://tadanosurvival.github.io/"/>
-	<meta property="og:type" content="最新情報"/>
-	<meta property="og:title" content="ただのサバイバルサーバー"/>
-	<meta name="author" cotent="Built by AI Avalon&Satoyan">
-	<meta property="og:description" content="ただのサバイバルサーバー公式webページ"/>
-	<meta property="og:image" content="img/favicon.svg"/>
-	<meta name="msapplication-TileColor" content="#ff007f">
-	<meta name="theme-color" content="#b9ff5d">
-	<meta property="og:type" content="Website"/>
-	<meta name="twitter:title" content="ただのサバイバルサーバー">  
-    <meta name="twitter:description" content="ただのサバイバルサーバー公式webページ">
-    <meta name="twitter:card" content="summary_large_image">
-</head>
-<body class="bg-dark">
-	<!-- Pre-loader -->
-	<div class="loader_bg">
-		<div class="loader"></div>
-	</div>
-    <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1500);
-    </script>	
+		<!-- Share/Embed Content -->
+		<meta property="og:url" content="https://tadanosurvival.github.io/" />
+		<meta property="og:type" content="最新情報" />
+		<meta property="og:title" content="ただのサバイバルサーバー" />
+		<meta name="author" cotent="Built by AI Avalon&Satoyan" />
+		<meta property="og:description" content="ただのサバイバルサーバー公式webページ" />
+		<meta property="og:image" content="img/favicon.svg" />
+		<meta name="msapplication-TileColor" content="#ff007f" />
+		<meta name="theme-color" content="#b9ff5d" />
+		<meta property="og:type" content="Website" />
+		<meta name="twitter:title" content="ただのサバイバルサーバー" />
+		<meta name="twitter:description" content="ただのサバイバルサーバー公式webページ" />
+		<meta name="twitter:card" content="summary_large_image" />
+	</head>
+	<body class="bg-dark">
+		<!-- Pre-loader -->
+		<div class="loader_bg">
+			<div class="loader"></div>
+		</div>
+		<script>
+			setTimeout(function () {
+				$(".loader_bg").fadeToggle();
+			}, 1500);
+		</script>
 
-	<!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-		<div class="container">
-			<a href="index.html" class="navbar-brand" href="#"><img src="img/logo.svg" alt="" height="40"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="bi bi-list"></i></button>
-			<div class="collapse navbar-collapse" id="navmenu">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a href="index.html" class="nav-link active">ようこそ！</a>
-					</li>
-					<li class="nav-item">
-						<a href="announcements.html" class="nav-link active">最新情報</a>
-					</li>
-					<li class="nav-item">
-						<a href="members.html" class="nav-link">運営陣紹介</a>
-					</li>
-					<li class="nav-item">
-                        <a href="rule.html" class="nav-link">ルール</a>
-                    </li>
-					<li class="nav-item">
-						<a href="gallery.html" class="nav-link">サーバー内風景</a>
-					</li>
-					<li class="nav-item">
-						<a href="guides.html" class="nav-link">参加方法</a>
-					</li>
-					<li class="nav-item">
-						<a href="about.html" class="nav-link">その他</a>
-					</li>
-					<li class="nav-item">
-						<a href="https://discord.gg/hzkuHhUebz" class="btn btn-info" role="button" target="_blank">Discordに参加</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link visits">0</a>
-					</li>
-				</ul>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+			<div class="container">
+				<a href="index.html" class="navbar-brand" href="#"><img src="img/logo.svg" alt="" height="40" /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="bi bi-list"></i></button>
+				<div class="collapse navbar-collapse" id="navmenu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active">ようこそ！</a>
+						</li>
+						<li class="nav-item">
+							<a href="announcements.html" class="nav-link active">最新情報</a>
+						</li>
+						<li class="nav-item">
+							<a href="members.html" class="nav-link">運営陣紹介</a>
+						</li>
+						<li class="nav-item">
+							<a href="rule.html" class="nav-link">ルール</a>
+						</li>
+						<li class="nav-item">
+							<a href="gallery.html" class="nav-link">サーバー内風景</a>
+						</li>
+						<li class="nav-item">
+							<a href="guides.html" class="nav-link">参加方法</a>
+						</li>
+						<li class="nav-item">
+							<a href="about.html" class="nav-link">その他</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://discord.gg/hzkuHhUebz" class="btn btn-info" role="button" target="_blank">Discordに参加</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link visits">0</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
-	<!-- Welcome Screen -->
-	<section class="bg-dark text-light p-5 text-center">
-		<div class="container">
-			<h1 class="m-0 display-3">ただのサバイバルサーバー</h1>
-			<h1 class="display-1" style="color: #008cff;">最新情報</h1>
-		</div>
-	</section>
+		<!-- Welcome Screen -->
+		<section class="bg-dark text-light p-5 text-center">
+			<div class="container">
+				<h1 class="m-0 display-3">ただのサバイバルサーバー</h1>
+				<h1 class="display-1" style="color: #008cff">最新情報</h1>
+			</div>
+		</section>
 
-
-	<!--
+		<!--
 	<div class="container">
 		<div class="card text-white bg-dark mb-3">
 		  <div class="card-header">(日付)</div>
@@ -105,151 +109,191 @@
 	上に上に書いていく
 	-->
 
-	<!-- News and Accouncements Cards -->
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2023年8月8日</div>
-		  <div class="card-body">
-		    <h5 class="card-title">19期開始！</h5>
-		    <p class="card-text">サーバー機のエラーにより18期のデータが復元不能になったため19期に移行します。</p>
-		  </div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2023年3月25日</div>
-		  <div class="card-body">
-		    <h5 class="card-title">17期開始！</h5>
-		    <p class="card-text">ただのサバイバルサーバーの17期が開始しました！
-				<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2023年3月15日</div><!--日付-->
-		  <div class="card-body">
-		    <h5 class="card-title">17期開始予定日程が決定！</h5>
-		    <p class="card-text">ただのサバイバルサーバーの17期への移行日程が<strong> 3月25日午前0時 </strong> に決定しました！
-			<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2023年1月5日</div>
-		  <div class="card-body">
-		    <h5 class="card-title">16期開始！</h5>
-		    <p class="card-text">ただのサバイバルサーバーの16期開始が<strong> 1月5日午前0時 </strong> に決定しました！
-				<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2022年7月20日</div><!--日付-->
-		  <div class="card-body">
-		    <h5 class="card-title">14期開始予定日程が決定！</h5>
-		    <p class="card-text">ただのサバイバルサーバーの14期への移行日程が<strong> 8月1日午前0時 </strong> に決定しました！
-			<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2022年6月10日</div><!--日付-->
-		  <div class="card-body">
-		    <h5 class="card-title">kennnngoさん主催のイベントが開催されます！</h5>
-		    <p class="card-text">kennnngoさん主催のイベントが<strong> 6月12日午後9時 </strong> から開催されます！
-			<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-	
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2022年6月8日</div><!--日付-->
-		  <div class="card-body">
-		    <h5 class="card-title">13期開始予定日程が決定！</h5>
-		    <p class="card-text">ただのサバイバルサーバーの13期への移行日程が<strong> 6月11日午前0時 </strong> に決定しました！
-			<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2022年4月1日</div>
-		  <div class="card-body">
-		    <h5 class="card-title">ただのサバイバルサーバー、12期のスタートです！</h5>
-		    <p class="card-text">11期から12期にうつると同時に、いくつかシステムを変更致しました！<br>
-				・<strong>/poset,/poget,/hub</strong>の2つのコマンドは、エンドコンテンツとして導入されました！<br>
-				・初期リスの負荷を軽減するために、いくつかのルール、システムを作りました！<br>
-				【ルール、システム内容】<br>
-				一、(2,80,7)に掲示板を設置し、連絡事項などはそこに書くようにします。また、掲示した看板は3日後には消されるようになります。(看板を返却するシステムは後日作らせていただきます。暫くお待ちを！)<br>
-				二、初期リスから半径100マス以内では、看板の設置を禁止します。システムは作っておりませんが、定期的な見回りを行いますので、見つけ次第、壊させてもらいます。<br>
-				三、初期リス半径100マス以内では、チェストではなく、樽を使うようにお願いします。こちらに関しては、強制的に壊すようなことはしませんが、みんなが快適に遊べるように、ご協力お願いします。<br>
-				少し厳しいかもしれませんが、初期リスから半径100マスの外であれば、自由に設置して大丈夫なので、半径100マス外を開拓していくことをおすすめします！<br>
-				長くなりましたが、これらの変更点をご理解していただけると幸いです。<br>
-				ただのサバイバルサーバー12期もよろしくお願いいたします！<br>
-		  </div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2022年3月31日</div>
-		  <div class="card-body">
-		    <h5 class="card-title">12期についてのお知らせ</h5>
-		    <p class="card-text">#イベント情報 の結果をもとに協議した結果<strong>3/31日の21時を持ちまして、11期を終了し、3時間後の4/1日の午前0時から12期をスタート</strong>したいと思います！（多少前後する可能性あり）<br>
-		  </div>
-		</div>
-	</div>
-	
-	<div class="container">
-		<div class="card text-white bg-dark mb-3">
-		  <div class="card-header">2022年3月25日</div><!--日付-->
-		  <div class="card-body">
-		    <h5 class="card-title">12期開始予定日程が決定！</h5>
-		    <p class="card-text">ただのサバイバルサーバーの12期への移行日程が<strong> 4月1日午前0時 </strong> に決定しました！
-			<br>詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！</p>
-		  </div>
-		</div>
-	</div>
-
-
-
-	<!-- Footer -->
-	<section class="bg-dark text-light p-4">
+		<!-- News and Accouncements Cards -->
 		<div class="container">
-			<p class="lead text-center"><a href="about.html">その他</a>に行ってみる</p>
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2023年12月16日</div>
+				<div class="card-body">
+					<h5 class="card-title">20期開始！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの20期が開始しました！ <br />詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！
+					</p>
+				</div>
+			</div>
 		</div>
-	</section>
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2023年8月8日</div>
+				<div class="card-body">
+					<h5 class="card-title">19期開始！</h5>
+					<p class="card-text">サーバー機のエラーにより18期のデータが復元不能になったため19期に移行します。</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2023年3月25日</div>
+				<div class="card-body">
+					<h5 class="card-title">17期開始！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの17期が開始しました！ <br />詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
 
-	<script type="text/javascript">
-		function updateCounter() {
-		    fetch('https://api.countapi.xyz/get/TadanoSurvival')
-		        .then(res => res.json())
-		        .then(data => counterElement.innerHTML = data.value)
-		}
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2023年3月15日</div>
+				<!--日付-->
+				<div class="card-body">
+					<h5 class="card-title">17期開始予定日程が決定！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの17期への移行日程が<strong> 3月25日午前0時 </strong> に決定しました！
+						<br />詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
 
-		updateCounter()
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2023年1月5日</div>
+				<div class="card-body">
+					<h5 class="card-title">16期開始！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの16期開始が<strong> 1月5日午前0時 </strong> に決定しました！ <br />詳しくは公式Discordの<strong
+							>#お知らせ</strong
+						>
+						からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
 
-		counterElement = document.getElementsByClassName('visits')[0];
-	</script>
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2022年7月20日</div>
+				<!--日付-->
+				<div class="card-body">
+					<h5 class="card-title">14期開始予定日程が決定！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの14期への移行日程が<strong> 8月1日午前0時 </strong> に決定しました！
+						<br />詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script>
-	  function myFunction() {
-	    var copyText = document.getElementById("myInput");
-	    copyText.select();
-	    document.execCommand("Copy");
-	    alert("IPアドレスをコピーしました！");
-	  }
-	</script>
-</body>
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2022年6月10日</div>
+				<!--日付-->
+				<div class="card-body">
+					<h5 class="card-title">kennnngoさん主催のイベントが開催されます！</h5>
+					<p class="card-text">
+						kennnngoさん主催のイベントが<strong> 6月12日午後9時 </strong> から開催されます！ <br />詳しくは公式Discordの<strong
+							>#お知らせ</strong
+						>
+						からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2022年6月8日</div>
+				<!--日付-->
+				<div class="card-body">
+					<h5 class="card-title">13期開始予定日程が決定！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの13期への移行日程が<strong> 6月11日午前0時 </strong> に決定しました！
+						<br />詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2022年4月1日</div>
+				<div class="card-body">
+					<h5 class="card-title">ただのサバイバルサーバー、12期のスタートです！</h5>
+					<p class="card-text">
+						11期から12期にうつると同時に、いくつかシステムを変更致しました！<br />
+						・<strong>/poset,/poget,/hub</strong>の2つのコマンドは、エンドコンテンツとして導入されました！<br />
+						・初期リスの負荷を軽減するために、いくつかのルール、システムを作りました！<br />
+						【ルール、システム内容】<br />
+						一、(2,80,7)に掲示板を設置し、連絡事項などはそこに書くようにします。また、掲示した看板は3日後には消されるようになります。(看板を返却するシステムは後日作らせていただきます。暫くお待ちを！)<br />
+						二、初期リスから半径100マス以内では、看板の設置を禁止します。システムは作っておりませんが、定期的な見回りを行いますので、見つけ次第、壊させてもらいます。<br />
+						三、初期リス半径100マス以内では、チェストではなく、樽を使うようにお願いします。こちらに関しては、強制的に壊すようなことはしませんが、みんなが快適に遊べるように、ご協力お願いします。<br />
+						少し厳しいかもしれませんが、初期リスから半径100マスの外であれば、自由に設置して大丈夫なので、半径100マス外を開拓していくことをおすすめします！<br />
+						長くなりましたが、これらの変更点をご理解していただけると幸いです。<br />
+						ただのサバイバルサーバー12期もよろしくお願いいたします！<br />
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2022年3月31日</div>
+				<div class="card-body">
+					<h5 class="card-title">12期についてのお知らせ</h5>
+					<p class="card-text">
+						#イベント情報
+						の結果をもとに協議した結果<strong>3/31日の21時を持ちまして、11期を終了し、3時間後の4/1日の午前0時から12期をスタート</strong>したいと思います！（多少前後する可能性あり）<br />
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">2022年3月25日</div>
+				<!--日付-->
+				<div class="card-body">
+					<h5 class="card-title">12期開始予定日程が決定！</h5>
+					<p class="card-text">
+						ただのサバイバルサーバーの12期への移行日程が<strong> 4月1日午前0時 </strong> に決定しました！
+						<br />詳しくは公式Discordの<strong>#お知らせ</strong> からご確認ください！
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<section class="bg-dark text-light p-4">
+			<div class="container">
+				<p class="lead text-center"><a href="about.html">その他</a>に行ってみる</p>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			function updateCounter() {
+				fetch("https://api.countapi.xyz/get/TadanoSurvival")
+					.then((res) => res.json())
+					.then((data) => (counterElement.innerHTML = data.value));
+			}
+
+			updateCounter();
+
+			counterElement = document.getElementsByClassName("visits")[0];
+		</script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			function myFunction() {
+				var copyText = document.getElementById("myInput");
+				copyText.select();
+				document.execCommand("Copy");
+				alert("IPアドレスをコピーしました！");
+			}
+		</script>
+	</body>
 </html>
